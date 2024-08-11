@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Obsidian]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Obsidian</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 11 Aug 2024 12:36:38 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 11 Aug 2024 12:35:36 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[Curba polara]]></title><description><![CDATA[ 
+ <br>Se mai numeste loc de transfer, caracteristica Niquist si hodograf<br><br>Caracteristica polara este o reprezentare grafica in coordonate polare a modulului in functie de unghiul de faza atunci cand omega (pulsatia) se modifica de la 0 la infinit.<br>Fiecare punct de pe curba polara reprezinta varful vectorului  pentru o anumita valoare a pulsatiei.<br>Unghiul de faza se masoara in sens trigonometric.<br><img alt="Pasted image 20240618143326.png" src="attachments\pasted-image-20240618143326.png"><br>Forma generala de trasare a caracteristicilor polare<br><br>unde <br>O regula generala:<br>
+Daca  la pulsatii inalte (omega tine la infinit) curba polara tinde spre originea planului complex fiind tangenta la una din semiaxe (vezi figura) astfel:<br>
+<img alt="Pasted image 20240618143555.png" src="attachments\pasted-image-20240618143555.png"><br>
+<br>Daca , curba polara tinde spre originea planului complex, fiind tangenta la semiaxa imaginara pozitiva.
+<br>Daca , curba polara tinde spre originea planului complex, fiind tangenta la semiaxa reala negativa.
+<br>Daca , curba polara tinde spre originea planului complex, fiind tangenta la semiaxa imaginara negativa.
+<br>La pulsatii joase, atunci cand omega tinde la 0, forma curbei polare depinde<br>de tipul sistemului (vezi figura urmatoare) astfel:<br><img alt="Pasted image 20240618143654.png" src="attachments\pasted-image-20240618143654.png"><br>
+<br>Cand , curba polara pleaca dintr-un punct de pe axa reala (in marea majoritate a cazurilor de pe axa reala pozitiva).
+<br>Cand , curba polara tinde asimptotic la o dreapta paralela cu semiaxa imaginara negativa.
+<br>Cand , curba polara tinde asimptotic la o dreapta paralela cu semiaxa reala negativa.
+<br><br>
+]]></description><link>curba-polara.html</link><guid isPermaLink="false">Curba polara.md</guid><pubDate>Sat, 10 Aug 2024 18:21:13 GMT</pubDate><enclosure url="attachments\pasted-image-20240618143326.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;attachments\pasted-image-20240618143326.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Examen SAE]]></title><description><![CDATA[ 
+ <br><br><br><br><br><br>Se dă sistemul continuu cu funcţia de transfer<br> сu <br>Să se determine <a data-tooltip-position="top" aria-label="Calculul analitic aproximativ al funcţiilor de transfer z > Transformata z matched" data-href="Calculul analitic aproximativ al funcţiilor de transfer z#Transformata z matched" href="calculul-analitic-aproximativ-al-funcţiilor-de-transfer-z.html#Transformata_z_matched" class="internal-link" target="_self" rel="noopener">transformata z matched</a>.<br><br><br><br><br>Explicatia anterioara este inutila<br>Pasii necesari realizarii transformatei z matched sunt:<br><br>Se realizeaza folosind <a data-tooltip-position="top" aria-label="Transformata Z" data-href="Transformata Z" href="transformata-z.html" class="internal-link" target="_self" rel="noopener">transformata z</a>.<br><br>Chiar daca nu exista zerouri scrise in functie, ele exista la infinit. Numarul de poli si zerouri intr-o functie de transfer este mereu egal. Se adauga astfel zerouri la infinit, adica  sau  la numitor.<br><br>Se sterg poli la infinit pana cand functia de transfer este strict realizabila, adica numarul de poli sa fie egal cu numarul de zerouri -1.<br><br>Pentru a afla factorul de amplificare in planul , se echivaleaza  cu , iar in planul , se echivaleaza  cu . Astfel, vom rezolva ecuatia: <br><br><br>Paşii 1 şi 2 furnizează funcţia de transfer z cu expresia:<br><br>Pasul 3: Se calculează factorul de amplificare al funcţiei de transfer  folosind relaţiile succesive  :<br><br>Funcţia de transfer z matched care se obţine are expresia literală<br><br><br><br><br><br>Să se determine ecuaţia cu diferenţe pentru sistemul de ordinul întâi cu funcţia de transfer:<br><br><br>Având în vedere relaţia de definiţie a funcţiei de transfer, rezultă într-o primă etapă:<br><br>respectiv:<br><br>Ecuaţia diferenţială se obţine prin aplicarea transformatei Laplace inverse, folosind proprietatea de derivare a transformatei Laplace, în condiţii iniţiale nule, pentru mărimea de ieşire  :<br><br>Aproximând derivata cu diferenţa de ordinul unu se obţine succesiv:<br><br>respectiv:<br>unde  şi .<br><br><br><br><br><br><br>Să se determine secvenţa temporală a semnalului  cu <a data-tooltip-position="top" aria-label="Transformata Z > Metoda seriilor infinite de puteri ale lui $z {-1}$" data-href="Transformata Z#Metoda seriilor infinite de puteri ale lui $z {-1}$" href="transformata-z.html#Metoda_seriilor_infinite_de_puteri_ale_lui_$z_{-1}$" class="internal-link" target="_self" rel="noopener">metoda seriilor infinite de puteri ale lui z-1</a>, pentru funcţia complexă:<br><br><br>Se calculează mai întâi forma în  :<br><br>apoi se împart cele două polinoame conform schemei prezentate în continuare:<br><img alt="Pasted image 20240304170941.png" src="attachments\pasted-image-20240304170941.png"><br>Prin comparaţie directă cu:<br><br>rezultă secvenţa temporală<br><br>care poate fi scrisă în mod echivalent <br>Calculul analitic cu metoda seriilor infinite de puteri ale lui  este laborios, preferându-se în acest caz calculul numeric asistat de calculator.<br><br><br><br>Într-un sistem discret, relația dintre  și frecvența continuă  se poate exprima astfel:<br><br>unde ​ este perioada de eșantionare. Substituie valorile cunoscute și simplifică această expresie pentru a obține o relație mai simplificată între  și .<br><br>Substituie expresia obținută pentru  în funcția de transfer :<br><br><br>Extinde și simplifică atât numărătorul, cât și numitorul funcției de transfer. Acest proces va implica multiplicarea și combinarea termenilor pentru a obține o formă mai simplificată a funcției de transfer.<br><br>Înlocuiește variabila  cu  (unde  este unitatea imaginară), pentru a trece de la domeniul  la domeniul frecvenței :<br><br><br>Expandează și simplifică expresia obținută la pasul anterior astfel încât să fie ușor să identifici partea reală și partea imaginară.<br><br><br>Identifică termenii care sunt multipli ai lui  (aceștia formează partea imaginară) și pe cei care nu sunt multipli ai lui  (aceștia formează partea reală).<br><br>Exprima partea reală și partea imaginară ale funcției de transfer  sub forma:<br><br><br>Curba polara<br><br><br>Se mai numeste loc de transfer, caracteristica Niquist si hodograf<br><br>Caracteristica polara este o reprezentare grafica in coordonate polare a modulului in functie de unghiul de faza atunci cand omega (pulsatia) se modifica de la 0 la infinit.<br>Fiecare punct de pe curba polara reprezinta varful vectorului  pentru o anumita valoare a pulsatiei.<br>Unghiul de faza se masoara in sens trigonometric.<br><img alt="Pasted image 20240618143326.png" src="attachments\pasted-image-20240618143326.png"><br>Forma generala de trasare a caracteristicilor polare<br><br>unde <br>O regula generala:<br>
+Daca  la pulsatii inalte (omega tine la infinit) curba polara tinde spre originea planului complex fiind tangenta la una din semiaxe (vezi figura) astfel:<br>
+<img alt="Pasted image 20240618143555.png" src="attachments\pasted-image-20240618143555.png"><br>
+<br>Daca , curba polara tinde spre originea planului complex, fiind tangenta la semiaxa imaginara pozitiva.
+<br>Daca , curba polara tinde spre originea planului complex, fiind tangenta la semiaxa reala negativa.
+<br>Daca , curba polara tinde spre originea planului complex, fiind tangenta la semiaxa imaginara negativa.
+<br>La pulsatii joase, atunci cand omega tinde la 0, forma curbei polare depinde<br>de tipul sistemului (vezi figura urmatoare) astfel:<br><img alt="Pasted image 20240618143654.png" src="attachments\pasted-image-20240618143654.png"><br>
+<br>Cand , curba polara pleaca dintr-un punct de pe axa reala (in marea majoritate a cazurilor de pe axa reala pozitiva).
+<br>Cand , curba polara tinde asimptotic la o dreapta paralela cu semiaxa imaginara negativa.
+<br>Cand , curba polara tinde asimptotic la o dreapta paralela cu semiaxa reala negativa.
+<br><br>
+<br><br><br>
+<br>
+<br>
+<br>Analiza sistemelor discrete cu metoda locului radacinilor<br><br><br>Metoda locului radacinilor poate fi aplicata cu usurinta si in cazul sistemelor cu esantionare. <br>In aplicarea metodei pornim de la functia de transfer  a sistemului deschis. <br>Consideram sistemul cu esantionare a erorii urmator:<br><img alt="Pasted image 20240809170245.png" src="attachments\pasted-image-20240809170245.png"><br><a data-tooltip-position="top" aria-label="Functii de transfer" data-href="Functii de transfer" href="functii-de-transfer.html" class="internal-link" target="_self" rel="noopener">Functia de transfer</a>  a sistemului inchis este: <a data-footref="1" href="about:blank#fn-1-731b67acb33f3cb8" class="footnote-link" target="_self" rel="noopener">[1]</a><br><br>Radacinile sistemului inchis, care ofera informatia necesara pentru evaluarea stabilitatii sistemului discret de reglare, sunt determinate exclusiv de ecuatia caracteristica a sistemului:<br><br>Deoarece  este o functie cu valori complexe, ecuatia caracteristica poate fi scrisa sub forma echivalenta:<br><br>de unde, din egalarea modulului si argumentului din ambii membrii, rezulta conditia mmodulului:<br><br>si conditia argumentului:<br><br>Valorile lui  care indeplinesc conditiile modulului si argumentului sunt radacinile ecuatiei caracteristice sau polii sistemului in circuit inchis.<br>Pentru ca un punct sa apartina locului radacinilor, este insa suficienta indeplinirea uneia dintre cele 2 conditii. Prin urmare, reprezentarea grafica a punctelor din planul complex, care satisfac,d de exemplu, numai conditia fazei este de fapt locul radacinilor pentru sistemul in circuit inchis. Valorile radacinilor ecuatiei caracteristice (polii sistemului in circuit inchis) care corespund unei valori date a factorului de amplificare se pot determina din conditia modului. <br>In cele mai multe cazuri, factorul de amplificare  prezinta un parametru al functiei de tranfer a sistemului deschis,  si ecuatia caracteristica se poate scrie conform expresiei:<br><br>Prin urmare, locul radacinilor este locul geometric al polilor sistemului inchis cand amplificarea  se modifica de la  la .<br>Info
+Pentru a incepe desenarea locului radacinilor a unui sistem, trebuie sa cunoastem valorile polilor si zerourilor functiei 
+<br><br>Pentru <a data-tooltip-position="top" aria-label="Sisteme" data-href="Sisteme" href="sisteme.html" class="internal-link" target="_self" rel="noopener">sisteme</a> complexe, cu mai multe singularităţi (poli şi zerouri), trasarea locului rădăcinilor este aparent complicată, dar, dacă se aplică sistematic o serie de reguli, construcţia grafică a locului rădăcinilor se simplifică mult. <br>Astfel, prin amplasarea punctelor particulare şi a asimptotelor, după evaluarea unghiurilor de plecare (sosire) a ramurilor locului din polii complexi (în zerourile complexe) se poate schiţa fără dificultate forma de variaţie a locului rădăcinilor pentru un caz dat. <br>Avantajele cel mai însemnate ale metodei locului rădăcinilor apar, de fapt, în cazul sistemelor de ordin ridicat pentru care găsirea polilor funcţiei de transfer în circuit închis cu alte metode este extrem de laborioasă.<br>Având în vedere că trasarea locului rădăcinilor are acelaşi regim de construcţie ca în cazul sistemelor continue, în continuare se vor prezenta, în rezumat, fără prea multe justificări, regulile generale de trasare a locului rădăcinilor pentru un sistem cu eşantionare închis cu reacţie negativă neunitară.<br><br><br>care se aranjează astfel încât să se pună în evidenţă, parametrul care ne interesează, ca un factor multiplicativ, conform expresiei<br><br>În discuţia de faţă, vom presupune că parametrul considerat este factorul de amplificare , unde . Dacă se acceptă valori negative ale factorului de amplificare , caz în care avem de fapt o reacţie pozitivă, va fi necesar să se modifice condiţia fazei (a argumentului).<br><br>Se plasează, în planul complex, polii şi zerourile funcţiei . Polii se marchează cu un  iar zerourile cu un o. Locul rădăcinilor începe în polii sistemului deschis şi se termină în zerouri (cu valoare finită sau la infinit).<br><br><br>
+<br>Numărul asimptotelor este egal cu ; - Unghiurile asimptotelor,
+<br><br>
+<br>Abscisa punctului de intersecţie a aimptotelor,
+<br><br><br>În acest scop scriem ecuaţia caracteristică conform expresiei<br><br>Punctele de ramificaţie ale locului rădăcinilor se determină prin rezolvarea ecuaţiei<br><br>unde caracterul prim indică operaţia de derivare în raport cu variabila . Este important să remarcăm însă că punctele de ramificaţie vor fi numai acele rădăcini reale ale ecuaţiei (7) care se află pe porţiunea considerată a locului rădăcinilor de pe axa reală.<br><br>
+<br>
+Unghiul de plecare dintr-un pol complex ;
+
+<br>
+Unghiul de sosire într-un zero complex ;
+
+<br> sunt unghiurile vectorilor care încep în zerouri, iar  sunt unghiurile vectorilor complexi care pleacă din poli.<br><br>Aceste puncte se determină folosindu-se <a data-tooltip-position="top" aria-label="Criteriul de stabilitate Routh-Hurwitz" data-href="Criteriul de stabilitate Routh-Hurwitz" href="criteriul-de-stabilitate-routh-hurwitz.html" class="internal-link" target="_self" rel="noopener">criteriul de stabilitate Routh-Hurwitz</a> modificat, sau rezolvând pentru  şi  ecuaţia complexă,<br><br><br>Valoarea lui  corespunzătoare fiecărui punct de pe locul rădăcinilor din planul  se determină cu relaţia:<br><br><br>Să se schiţeze locul rădăcinilor pentru un sistem discret de reglare cu reacţie negativă unitara  <br>Functia de transfer  a sistemului in circuit deschis este:<br><br><br><br> Deoarece sistemul are reacţie negativă unitară, , ecuaţia caracteristică este:<br><br>Factorul de amplificare  se presupune pozitiv şi variabil de la 0 la .<br><br>Deoarece gradul polinomului sistemului deschis este , rezultă că locul rădăcinilor are două ramuri. Funcţia de transfer a sistemului deschis are doi poli:<br><br>şi un zero:<br><br>Repartiţia poli-zerouri pentru funcţia de transfer considerată în exemplu poate fi vizualizată în figura 4.57 care prezintă şi schiţa locului rădăcinilor.<br><br>Locul rădăcinilor pe axa reală are două porţiuni care respectă condiţia generală:<br>
+<br>între polii  şi ;
+<br>între zeroul  şi .
+<br><br>Numărul asimptotelor este:<br><br>Singura asimptotă este suprapusă axei reale (deoarece  ) şi corespunde locului rădăcinilor cuprins între  şi .<br><br>Deoarece avem porţiuni ale locului pe axa reală între doi poli, respectiv zerouri (unul finit, celălalt la infinit), există 2 puncte de ramificaţie. Scriind ecuaţia caracteristică conform expresiei:<br><br>punctele de ramificaţie sunt soluţile ecuaţiei<br><br>respectiv<br><br><br>Se verifică uşor că, deoarece , deci .<br><br>Funcţia de transfer  a sistemului deschis nu are poli complecşi sau zerouri complexe.<br>Pentru o schiţare mai exactă vom arăta că forma locului rădăcinilor pentru cazul rădăcinilor complexe ale sistemului închis este un cerc. În acest scop se înlocuieşte  în funcţia de transfer  a sistemului deschis:<br><br>şi se scrie condiţia argumentului, de unde rezultă:<br><br><img src="https://cdn.mathpix.com/cropped/2023_08_08_b683b8c6715240203458g-5.jpg?height=871&amp;width=1196&amp;top_left_y=1124&amp;top_left_x=424" referrerpolicy="no-referrer"><br>Se aplică apoi funtia tangentă relaţiei de mai sus în ambii membrii şi se obţine:<br><br>De aici avem<br><br>de unde, după simplificare, rezultă: <br><br>deci locul geometric al rădăcinilor este un cerc cu centrul în origine şi raza .<br><br>Cercul de rază unitară este intersectat o singură dată de locul rădăcinilor. Acest punct se obţine pentru . Factorul de amplificare pentru care sistemul discret este la limita de stabilitate se determină cu relaţia:<br><br><br>Vom calcula factorul de amplificare pentru valorile variabilei z pentru care locul rădăcinilor intersectează axele reală şi imaginară:<br><br>Particularizând pentru , vom avea următoarele valori pentru parametrii locului rădăcinilor:<br>
+<br>raza 
+<br>factorul de amplificare la limita de stabilitate 
+<br>factorul de amplificare pentru 
+<br>factorul de amplificare pentru 
+<br>factorul de amplificare pentru .
+<br>Note
+Interesantă este analiză valorilor obţinute şi a locului rădăcinilor când se modifică perioada de eşantionare. Astfel dacă  scade la valoarea , se constată că raza corespunzătoare locului pentru rădăcini complexe creşte la valoarea , deci se apropie periculos de mult de limita de instabilitate, dar, aparent paradoxal, valoarea factorului de amplificare la limita de stabilitate creşte la .
+O explicaţie pentru aceste valori contradictorii este în faptul că, deşi sistemul este stabil chiar la valori mari ale factorului de amplificare, în cazul rădăcinilor complexe, gradul de oscilaţie este extrem de pronunţat, deoarece sistemul discret este foarte aproape de limita de stabilitate.
+<br><br><a data-href="SAE_curs13.pdf" href="sisteme-autoamte-cu-esantionare\sae_curs13.pdf" class="internal-link" target="_self" rel="noopener">SAE_curs13.pdf</a><br><br>
+<br>
+<br>De regula  include si functia de transfer a elementului de retinere <a href="about:blank#fnref-1-731b67acb33f3cb8" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br><br><br><br><br><br><br><br><br>Se introduce pornind de la forma complet controlabila, folosind proprietaatea de echivalenta a celor 2 realizari.<br>In baza acestei proprietati cele 2 forme (complet controlabila si complet observabila) au aceeasi functie de transfer .<br>Pentru simplificarea expunerii consideram din nou cazul functiei de transfer de ordinul 3:<br>
+In acest caz forma complet controlabila este descrisa la stare de matricele:<br><br>Deoarece  este o functie scalara avem proprietatea:<br>
+<br>unde indicele superior  specifica operatia de transpunere matriceala.<br>Avand in vedere proprietatea de transpunere a unui produs matriceal se poate scrie:<br>
+unde  reprezinta noile matrice ale formei complet observabile care rezulta prin identificarea din ultima egalitate conform expresiilor:<br><br>In consecinta modelul corespunzator formei complet observabile este descris de ecuatiile:
+
+<br>Generalizand rezultatul pentru o functie de transfer de ordinul  se obtine modelul la stare in forma complet observabila descris de matricele:<br><br><br><br>Pentru a determina modelul cu variabile de stare al unui sistem pornind de la o funcție de transfer, în forma complet controlabilă, urmează acești pași generali:<br><br>Reprezintă funcția de transfer  sub forma:<br>
+unde:<br>
+<br> reprezintă relația dintre ieșire  și o variabilă intermediară  .
+<br> reprezintă relația dintre variabila intermediară  și intrare .
+<br><br>Extinde și rescrie partea dinamică a funcției de transfer (numitorul) în domeniul timpului discret. Aceasta va fi o ecuație diferențială de forma:<br>
+Aplică operatorul  pentru a obține relația dintre variabilele de stare în domeniul timpului:<br>
+<br><br>Definește variabilele de stare    astfel încât:<br>
+Rescrie ecuațiile diferențiale folosind aceste variabile de stare, astfel încât să obții un sistem de ecuații diferențiale de ordin întâi.<br><br>Construiește matricea de stare   și matricea de control   din sistemul de ecuații de la pasul anterior:<br><br><br>Folosește relația dintre ieșirea sistemului  și variabilele de stare  , care provine din numărătorul funcției de transfer:<br>Aplică operatorul  și exprimă  în funcție de variabilele de stare:<br><br><br>Extrage matricea de ieșire  și matricea directă de legătură  din relația de mai sus.<br><br>Modelul complet controlabil al sistemului este descris de următoarele matrice:<br>
+<br>: descrie dinamica variabilelor de stare.
+<br>: descrie influența intrării asupra stării.
+<br>: descrie cum variabilele de stare influențează ieșirea.
+<br>: descrie legătura directă între intrare și ieșire.
+<br><br><br><br><br>Exista diverse modalitati pentru obtinerea acestei realizari. Vom ilustra deducerea acestei forme folosind cazul particular al functiei de transfer:<br>
+Se introduce variabila auxiliara , cu <a data-tooltip-position="top" aria-label="Transformata Z" data-href="Transformata Z" href="transformata-z.html" class="internal-link" target="_self" rel="noopener">transformata Z</a>, , care se defineste conform relatiei:<br>
+de unde rezulta:<br>
+si<br>
+ care se pot scrie conform expresiilor<br>
+Aplicam <a data-tooltip-position="top" aria-label="Transformata Z > Transformata z inversa" data-href="Transformata Z#Transformata z inversa" href="transformata-z.html#Transformata_z_inversa" class="internal-link" target="_self" rel="noopener">transformata Z inversa</a> ecuatiei  in conditii initiale nule si avand in vedere ca:<br><br>rezulta ecuatia cu diferente:
+
+<br>Definim variabilele de stare conform schemei:<br><br>si folosim ecuatia cu diferente pentru a obtine diferenta pentru ultima marime de stare:<br>
+Astfel rezulta sistemul de ecuatii de stare exprimat conform relatiilor:<br><br>Ecuatia iesirii pentru modelul cu variabile de stare se deduce in baza relatiei , scrisa in domeniul timpului pentru conditiile initiale nule:<br>
+de unde avand in vedere relatiile de definitie ale variabilei de stare rezulta:<br>
+<br>In concluzie modelul corespunzator  formei complet controlabile este:
+
+de unde prin identificarea cu forma matriceala rezulta:
+
+<br>Variabilele de stare obtinute conform schemei prezentate se numesc variabile de faza<br>Generalizand rezultatul pentru o functie de transfer de ordinul :<br>
+Modelul de stare in forma controlabila va fi descris de matricele:<br><br>Matricea  cu forma prezentata anterior se mai numeste matrice companion inferioara.<br><br>Folosim forma complet controlabila utilizand cazul particular al functiei de transfer:<br><br>In prima etapa se procedeaza in acelasi mod ca la forma de baza.<br>
+Se introduce variabila auxiliara  si dupa aplicarea <a data-tooltip-position="top" aria-label="Transformata Z > Transformata z inversa" data-href="Transformata Z#Transformata z inversa" href="transformata-z.html#Transformata_z_inversa" class="internal-link" target="_self" rel="noopener">transformatei Z inverse</a> se obtin ecuatiile cu diferente:<br>
+si<br>
+<br>Variabilele in stare se aleg insa acum astfel:<br><br>Substituind variabilele de starea astfel definite in cele 2 ecuatii se obtin:<br>
+<br>Din cele prezentate rezulta modelul cu variabile de stare pentru varianta formei complet controlabile descris de ecuatiile:
+
+de unde prin identificare cu forma matriceala generala, vom obtine matricele:
+
+<br><br><br><br><br>Relatia generala de conversie a unui model discret din spatiul starilor intr-o functie de transfer se determina pornind de la ecutaiile de stare si iesire scrise sub forma matriceala:<br><br>Prin aplicarea transformatei  in ipoteza conditiilor initiale nule se obtine:<br><br>unde  si  sunt transformatele  ale marimilor de intrare si iesire, iar  este vectorul transformatelor  ale variabilelor de stare.<br>Rezolvand in raport cu  prima ecuatie se obtine:<br>
+unde:<br>Info
+este matricea fundamentala a sistemului discret
+<br>Se inlocuieste  din relatia  in relatia , astfel obtinandu-se:<br>
+de unde rezulta:<br>
+care este tocmai functia de transfer  exprimata in functie de matricele sistemului discret modelat de stare.<br><br><br><br>Fie sistemul din figura (), unde <br><img alt="Pasted image 20240618144616.png" src="attachments\pasted-image-20240618144616.png"><br>
+<br>Sa se determine functia de transfer a sistemului in circuit folosind <a data-tooltip-position="top" aria-label="Calculul analitic aproximativ al funcţiilor de transfer z > Calculul analitic aproximativ bazat pe substituţii algebrice de tipul $s=f(z)$" data-href="Calculul analitic aproximativ al funcţiilor de transfer z#Calculul analitic aproximativ bazat pe substituţii algebrice de tipul $s=f(z)$" href="calculul-analitic-aproximativ-al-funcţiilor-de-transfer-z.html#Calculul_analitic_aproximativ_bazat_pe_substituţii_algebrice_de_tipul_$s=f(z)$" class="internal-link" target="_self" rel="noopener">metoda de integrare a trapezului</a>
+<br>Sa se determine pentru ce marime de intrare sistemul prezinta <a data-tooltip-position="top" aria-label="Analiza erorilor stationare la sisteme liniare discrete > Marimea de eroare" data-href="Analiza erorilor stationare la sisteme liniare discrete#Marimea de eroare" href="analiza-erorilor-stationare-la-sisteme-liniare-discrete.html#Marimea_de_eroare" class="internal-link" target="_self" rel="noopener">eroare stationara</a> finita
+<br>Sa se determine si sa se reprezinte grafic <a data-tooltip-position="top" aria-label="Analiza raspunsului in timp al sistemelor discrete > Raspunsul la treapta unitara" data-href="Analiza raspunsului in timp al sistemelor discrete#Raspunsul la treapta unitara" href="analiza-raspunsului-in-timp-al-sistemelor-discrete.html#Raspunsul_la_treapta_unitara" class="internal-link" target="_self" rel="noopener">raspunsul sistemului la marimea de intrare treapta unitara</a>
+<br><br>Se considera un sistem cu reactie negativa unitara, in care functia de transfer a sistemului in circuit deschis este de forma ():<br><br>Sa se reprezinte caracteristicile amplitudine-pulsatie si faza-pulsatie<br><br>Se considera un sistem cu reactie negativa unitara, in care functia de transfer a sistemului in circuit deschis este de urmatoarea forma ():<br><br>Determinati:<br>
+<br>Numarul de ramuri ale <a data-tooltip-position="top" aria-label="Analiza sistemelor discrete cu metoda locului radacinilor" data-href="Analiza sistemelor discrete cu metoda locului radacinilor" href="analiza-sistemelor-discrete-cu-metoda-locului-radacinilor.html" class="internal-link" target="_self" rel="noopener">locului radacinilor</a>; de unde incep ramurile si unde se termina
+<br>Portiunea de pe axareala care apartine locului radacinilor
+<br>Numarul de asimptote, unghiul pe care il fac cu axa reala si punctul unde se intalnesc pe axa reala
+<br>Punctele de ramificatie
+<br>Verificati daca locul radacinilor descrie un cerc. Trasati locul radacinilor
+<br><br>Se considera functia de transfer a unui sistem in circuit inchis:<br><br>
+<br>Sa se determine modelul cu variabile de stare in forma <a data-tooltip-position="top" aria-label="Modele ale sistemelor discrete cu variabile de stare > Realizarea complet observabila" data-href="Modele ale sistemelor discrete cu variabile de stare#Realizarea complet observabila" href="modele-ale-sistemelor-discrete-cu-variabile-de-stare.html#Realizarea_complet_observabila" class="internal-link" target="_self" rel="noopener">complet observabila</a> (demonstratie)
+<br>Plecand de la modelul cu variabile de stare sa re realizeze schema bloc
+<br><br><br>Se considera un sistem discret cu reactie negativa unitara in care partea continua are urmatoarea forma:<br><br>
+<br>Pentru , sa se determine functia de transfer a sistemului in circuit inchis plecand de la ecuatia cu diferente
+<br>Folosind graful de fluenta sa se determine functia de trensfer a sistemului in circuit inchis
+<br>Sa se determine pentru ce tip de intrare sistemul prezinta eroare stationara finita
+<br>Sa se determine raspunsul sistemului la marimea de intrare treapta unitara si sa se reprezinte grafic
+<br><br>Rezolvare:<br>
+<br>
+
+
+
+
+
+<br>
+
+
+<br>
+
+
+<br><br>Se considera un sistem cu reactie negativa unitara, in care functia de transfer a sistemului in circuit deschis este de urmatoarea forma ():<br><br>Sa se determine :<br>
+<br>Partea reala si partea imaginara
+<br>Punctul de unde pleaca <a data-tooltip-position="top" aria-label="Curba polara" data-href="Curba polara" href="curba-polara.html" class="internal-link" target="_self" rel="noopener">curba polara</a> si punctul unde se termina curba polara
+<br>Cum este sistemul in circuit deschis (argumentati)
+<br>Cum este sistemul in circuit inchis (argumentati)
+<br><br>Rezolvare:<br>
+<br>
+<br><img alt="Pasted image 20240618194727.png" src="attachments\pasted-image-20240618194727.png">
+<br>Sistemul in circuit deschis este stabil - curba polara nu inconjoara punctul 
+<br>Sistemul in circuit inchis este stabil
+<br><br>Se considera un sistem cu reactie negativa unitara, in care functia de transfer a sistemului in circuit deschis este de urmatoarea forma ():<br><br>Determinati:<br>
+<br>Numarul de ramuri ale <a data-tooltip-position="top" aria-label="Analiza sistemelor discrete cu metoda locului radacinilor" data-href="Analiza sistemelor discrete cu metoda locului radacinilor" href="analiza-sistemelor-discrete-cu-metoda-locului-radacinilor.html" class="internal-link" target="_self" rel="noopener">locului radacinilor</a>; de unde incep ramurile si unde se termina
+<br>Portiunea de pe axa reala care apartine locului radacinilor
+<br>Numarul de asimptote, unghiul pe care il fac cu axa reala si punctul unde se intalnesc pe axa reala
+<br>Punctele de ramificatie
+<br>Verificati daca locul radacinilor descrie un cerc
+<br><br>Rezolvare:<br>
+<br>
+<br><img alt="Pasted image 20240618195701.png" src="attachments\pasted-image-20240618195701.png">
+<br>
+<br>
+<br>
+<br><br>Se considera functia de transfer a unui sistem in circuit inchis:<br><br>
+<br>Sa se determine modelul cu variabile de stare in forma complet controlabila
+<br>Plecand de la modelul cu variabile de stare (matricele sistemului) sa se determine daca sistemul este controlabil
+<br><br>Rezolvare:<br>
+<br>
+<br>
+<br><br><br>Se considera un sistem discret cu reactie negativa unitara in care partea continua are urmatoarea forma:<br><br>
+<br>Pentru  si  sa se determine functia de transfer a sistemului in circuit inchis plecand de la ecuatia cu diferente
+<br>Folosind graful de fluenta sa se determine functia de transfer a sistemului in circuit inchis (fara a se calcula numeric)
+<br>Sa se determine raspunsul sistemului la marimea de intrare treapta unitara si sa se reprezinte grafic (se va folosi functia de transfer determinata la punctul a)
+<br>Sa se determine valoarea de regim stationar 
+<br><br>Se considera un sistem cu reactie negativa unitara, in care functia de transfer a sistemului in circuit deschis este de urmatoarea forma:<br><br>Determinati:<br>
+<br>Functia de transfer (forma Bode) in domeniul frecventa
+<br>Factorul de amplificare si tipul sistemului
+<br>Pulsatiile de frangere
+<br>Ce panta/pante are caracteristica amplitudine-pulsatie intre  si  (argumentati)
+<br><br>Se considera un sistem cu reactie negativa unitara, in care functia de transfer a sistemului in circuit deschis este de urmatoarea forma:<br><br>Determinati:<br>
+<br>Numarul de ramuri ale <a data-tooltip-position="top" aria-label="Analiza sistemelor discrete cu metoda locului radacinilor" data-href="Analiza sistemelor discrete cu metoda locului radacinilor" href="analiza-sistemelor-discrete-cu-metoda-locului-radacinilor.html" class="internal-link" target="_self" rel="noopener">locului radacinilor</a>; de unde incep ramurile si unde se termina
+<br>Portiunea de pe axa reala care apartine locului radacinilor
+<br>Numarul de asimptote, unghiul pe care il fac cu axa reala si punctul unde se intalnesc pe axa reala
+<br>Punctele de ramificatie
+<br>Verificati daca locul radacinilor descrie un cerc
+<br><br>Se considera functia de transfer a unui sistem in circuit inchis:<br><br>
+<br>Sa se determine modelul cu variabile de stare in forma complet observabila (demonstratie)
+<br>Sa se determine <a data-tooltip-position="top" aria-label="Modele ale sistemelor discrete cu variabile de stare > Conversia modelului cu variabile de stare in functii de transfer $z$" data-href="Modele ale sistemelor discrete cu variabile de stare#Conversia modelului cu variabile de stare in functii de transfer $z$" href="modele-ale-sistemelor-discrete-cu-variabile-de-stare.html#Conversia_modelului_cu_variabile_de_stare_in_functii_de_transfer_$z$" class="internal-link" target="_self" rel="noopener">matricea fundamentala</a> a sistemului
+<br><br><br>Se considera un sistem discret cu reactie negativa unitara in care partea continua are urmatoarea forma:<br><br>
+<br>Pentru , sa se determine functia de transfer a sistemului in circuit plecand de la ecuatia cu diferente
+<br>Folosind graful de fluenta sa se determine functia de transfer a sistemului in cricuti inchis
+<br>Sa se determine pentru ce tip de intrare sistemul prezinta eroare stationara finita
+<br>Sa se determine raspunsul sistemului la marimea de intrare treapta unitara si sa se reprezinte grafic
+<br><br>Rezolvare:<br>
+<br>
+
+
+
+
+
+<br>
+
+
+<br>
+<img alt="Pasted image 20240618163246.png" src="attachments\pasted-image-20240618163246.png">
+
+<br><br>Se considera un sistem cu reactie negativa unitara, in care functia de transfer a sistemului in circuit deschis este de urmatoarea forma ():<br><br>
+<br>Sa se determine partea reala si partea imaginara
+<br>Punctul de unde pleaca curba polara si punctul unde se termina curba polara
+<br>Cum este sistemul in circuit deschis
+<br>Cum este sistemul in circuit inchis
+<br><br>Se considera un sistem cu reactie negativa unitara, in care functia de transfer a sistemului in circuit deschis este de urmatoarea forma ()<br><br>Determinati:<br>
+<br>Numarul de ramuri ale <a data-tooltip-position="top" aria-label="Analiza sistemelor discrete cu metoda locului radacinilor" data-href="Analiza sistemelor discrete cu metoda locului radacinilor" href="analiza-sistemelor-discrete-cu-metoda-locului-radacinilor.html" class="internal-link" target="_self" rel="noopener">locului radacinilor</a>, de unde incep ramurile si unde se termina
+<br>Portiunea de pe axa reala care apartine locului radacinilor
+<br>Numarul de asimptote, unghiul pe care-l fac cu axa reala si punctul unde se intalnesc pe axa reala
+<br>Punctele de ramificatie
+<br>Verificati daca locul radacinilor descrie un cerc
+<br><br>Rezolvare:<br>
+<br><img alt="Pasted image 20240619115029.png" src="attachments\pasted-image-20240619115029.png">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>Se considera functia de transfer a unui sistem in circuit inchis:<br><br>
+<br>Sa se determine modelul cu variabile de stare in forma complet controlabila
+<br>Plecand de la modelul cu variabille de stare (matricea sistemului) sa se determine daca sistemul este controlabil
+<br><br><br>Sa se schiteze locul radacinilor pentru un sistem de reglare cu reactie negativa unitara. Functia de transfer  a sistemului in circuit deschis este ():<br>
+Determinati:<br>
+<br>Numarul de ramuri ale <a data-tooltip-position="top" aria-label="Analiza sistemelor discrete cu metoda locului radacinilor" data-href="Analiza sistemelor discrete cu metoda locului radacinilor" href="analiza-sistemelor-discrete-cu-metoda-locului-radacinilor.html" class="internal-link" target="_self" rel="noopener">locului radacinilor</a>, de unde incep ramurile si unde se termina
+<br>Portiunea de pe axa reala care apartine locului radacinilor
+<br>Numarul de asimptote, unghiul pe care-l fac cu axa reala si punctul unde se intalnesc pe axa reala
+<br>Punctele de ramificatie
+<br>Verificati daca locul radacinilor descrie un cerc
+<br><br>
+<br>
+
+
+<br>
+
+
+<br>
+
+
+<br>
+
+
+<br>
+
+
+<br>ReIm¡z1£¡p2£¡p1¡11xxx<br><br>Fie sistemul din figura ()<br>R(s)R(z)E(s)EiTeERO1s(s+1)Y(s)Y(z)¡<br>
+<br>Sa se determine functia de transfer discreta a sistemului inchis
+<br>Sa se determine raspunsul sistemului la marimea de intrare treapta unitara si sa se reprezinte grafic
+<br>Sa se determine pentru ce tip de intrare sistemul prezinta eroare stationara
+<br>Folosind curba polara sa se determine stabilitatea sistemului in bucla inchisa
+<br><br>
+<br>
+<br><br><br>Se considera un sistem discret cu reactie negativa unitara in care partea continua are urmatoarea forma:<br><br>
+<br>Pentru , sa se determine functia de transfer a sistemului in circuit plecand de la ecuatia cu diferente
+<br>Folosind graful de fluenta sa se determine functia de transfer a sistemului in cricuti inchis
+<br>Sa se determine pentru ce tip de intrare sistemul prezinta eroare stationara finita
+<br>Sa se determine raspunsul sistemului la marimea de intrare treapta unitara si sa se reprezinte grafic
+<br><br>
+<br>
+<br>R(s)GpcY¡<br><br>R¤x¤1¡(ERO¢G)¤1x¤2(ERO¢G)¤x¤3<br> 3. <br><br><br>Se considera un sistem discret cu reactie negativa unitara in care partea continua are urmatoarea forma:<br><br>
+<br>Pentru , sa se determine <a data-tooltip-position="top" aria-label="Seminar 3 SAE > Exercițiul 1" data-href="Seminar 3 SAE#Exercițiul 1" href="seminar-3-sae.html#Exercițiul_1" class="internal-link" target="_self" rel="noopener">functia de transfer a sistemuluiu in circuit inchis plecand de la ecuatia cu diferente</a>
+<br>Folosind graful de fluenta sa se determine functia de transfer a sistemului in circuit inchis
+<br>Sa se determine pentru ce tip de intrare sistemul prezinta eroare stationara finita
+<br>Sa se determine raspunsul sistemului la marimea de intrare treapta unitara si sa se reprezinte grafic
+<br><br>
+<br>
+<br>R(s)GpcY¡<br><br>R¤x¤1¡G¤PC1x¤2G¤PCx¤3<br>
+<br>
+<br> Se efectueaza impartirea polinomiala si se ajunge la rezultatul:
+<br>tY(t)¡1<br><br>Se considera un sistem cu reactie negativa unitara, in care functia de transfer a sistemului in circuit deschis este de urmatoarea forma ():<br>
+<br>
+<br>Sa se determine partea reala si partea imaginara
+<br>Sa se determine punctul de unde pleaca curba polara si punctul de unde se termina curba polara
+<br>Sa se determine cum este sistemul in circuit deschis (argumentati)
+<br>Sa se determine cum este sistemul in circuit inchis (argumentati)
+<br><br>
+<br>
+
+
+<br>
+
+ReIm¡0:70:245
+
+<br>
+  Sistemul in circuit deschis este stabil deoarece modulul polilor si zerourilor este 
+
+<br>
+Sistemul in circuit deschis este stabil deoarece caracteristica polara nu inconjoara punctul 
+
+<br><br>Se considera un sistem cu reactie negativa unitara, in care functia de transfer a sistemului in circuit deschis este de urmatoarea forma ():<br>
+Determinati:<br>
+<br>Numarul de ramuri ale locului radacinilor, de unde incep ramurile si unde se termina
+<br>Portiunea de pe axa reala care apartine locului radacinilor
+<br>Numarul de asimptote, unghiul pe care il fac cu axa reala si punctul unde se intalnesc pe axa reala
+<br>Punctele de ramificatie
+<br>Verificati daca locul radacinilor descrie un cerc
+<br><br>
+<br>
+<br>
+¡0:250:050:36
+
+<br>
+<br>
+<br>
+<br><br>Se considera functia de transfer a sistemului in circuit inchis:<br>
+<br>
+<br>Sa se determine modelul cu variabile de stare in forma complet controlabila (demonstratie)
+<br>Plecand de la modelul cu variabile de stare (matricele sistemului) sa se determine daca sistemul este controlabil
+<br><br>
+<br>
+<br>Controlabilitatea: 
+<br><br><br>Se considera un sistem discret cu reactie negativa unitara in care partea continua are urmatoarea forma:<br>
+<br>
+<br>Pentru , sa se determine functia de transfer a sistemului in circuit inchis plecand de la ecuatia cu diferente
+<br>Folosind graful de fluenta sa se determine functia de transfer a sistemului in circuit inchis
+<br>Sa se determine pentru ce tip de intrare sistemul prezinta eroare stationara finita
+<br>Sa se determine raspunsul sistemului la marimea de intrare treapta unitara si sa se reprezinte grafic
+<br><br>
+<br>
+<br>
+<br>RE=x1TeEiE¤=x2GY=x3¡1¡<br><br>R¤x¤1¡G¤1x¤2G¤x¤3=Y¤<br>3.  Sistemul prezinta eroare stationara la intrare treapta<br>
+4.  Se efectueaza impartirea polinomiala si se ajunge la rezultatul<br>tY(t)¡1<br><br>Se considera un sistem cu reactie negativa unitara, in care functia de transfer in circuit deschis este de urmatoarea forma ():<br>
+<br>
+<br>Sa se determine partea reala si partea imaginara
+<br>Punctul de unde pleaca curba polara si punctul unde se termina curba polara
+<br>Cum este sistemul in circuit deschis (argumentati)
+<br>Cum este sistemul in circuit inchis (argumentati)
+<br><br><br><br>Se considera un sistem cu reactie negativa unitara, in care functia de transfer a sistemului in circuit deschis este de urmatoarea forma ():<br>
+Determinati:<br>
+<br>Numarul de ramuri ale locului radacinilor, de unde incep ramurile si unde se termina
+<br>Portiunea de pe axa reala care apartine locului radacinilor
+<br>Numarul de asimptote, unghiul pe care il fac cu axa reala si punctul unde se intalnesc pe axa reala
+<br>Punctele de ramificatie
+<br>Verificati daca locul radacinilor descrie un cerc
+<br><br><br>Se considera functia de transfer a unui sistem in circuit inchis:<br>
+<br>
+<br>Sa se determine modelul cu variabile de stare in forma complet controlabila (demonstratie)
+<br>Plecand de la modelul cu variabile de stare (matricea sistemului) sa se determine daca sistemul este controlabil
+<br><br>
+<br>
+<br>
+
+
+<br><br><br>Se considera un sistem discret cu reactie negativa unitara in care partea continua are urmatoarea forma:<br>
+<br>
+<br>Pentru , sa se determine functia de transfer a sistemului in circuit inchhis plecand de la ecuatia cu diferente
+<br>Folosind graful de fluenta sa se determine functia de transfer a sistemului in circuit inchis
+<br>Sa se determine pentru ce tip de intrare sistemul prezinta eroare stationara finita
+<br>Sa se determine raspunsul sistemului la marimea de intrare treapta unitara si sa se reprezinte grafic
+<br><br>
+<br>
+<br>
+RE=x1TeEiE¤=x2ERO¢GPCY=x3¡1¡
+
+<br><br>R¤x¤1¡(ERO¢G)¤1x¤2(ERO¢G)¤x¤3<br><br>
+<br>
+<br>
+<br><br>Se considera un sistem cu reactie negativa unitara, in care functia de transfer a sistemului in circuit deschis este de urmatoarea forma ():<br>
+Determinati:<br>
+<br>Partea reala si partea imaginara
+<br>Punctul unde se termina curba polara
+<br>Cum este sistemul in circuit deschis (argumentati)
+<br>Cum este sistemul in circuit inchis (argumentati)
+<br><br><br>Se considera un sistem cu reactie negativa unitara, in care functia de transfer a sistemului in circuit deschis este de urmatoarea forma ():<br>
+Determinati:<br>
+<br>Numarul de ramuri ale locului radacinilor; de unde incep ramurile si unde se termina
+<br>Portiunea de pe axa reala care apartine locului radacinilor
+<br>Numarul de asimptote, unghiul pe care il fac cu axa reala si punctul unde se intalnesc pe axa reala
+<br>Punctele de ramificatie
+<br>Verificati daca locul radacinilor descrie un cerc
+<br><br><br>Se considera functia de transfer a unui sistem in circuit inchis:<br>
+<br>
+<br>Sa se determine modelul cu variabile de stare in forma complet controlabila (demonstratie)
+<br>Sa se determine matricea fundamentala a sistemului
+<br><br><br><br><img alt="Pasted image 20240618144616.png" src="attachments\pasted-image-20240618144616.png"><br><br>
+<br>Pentru  sa se determine functia de transfer a sistemului in circuit deschis:
+
+
+<br><br>Folosind graful de fluneta sa se determine functia de transfer a sistemului in circuit inchis:<br>
+<img alt="Pasted image 20240618155749.png" src="attachments\pasted-image-20240618155749.png"><br><br>Astfel, graful de fluenta devine:<br>
+<img alt="Pasted image 20240618160115.png" src="attachments\pasted-image-20240618160115.png"><br>
+Rezulta<br><br><br>Sa se determine pentru ce tip de intrare sistemul prezinta eroare stationara<br><br><br>Sa se reprezinte raspunsul sistemului la marimea de intrarea trepata unitara si sa se reprezinta grafic<br><br><br><img alt="Pasted image 20240618163204.png" src="attachments\pasted-image-20240618163204.png"><br>
+<img alt="Pasted image 20240618163246.png" src="attachments\pasted-image-20240618163246.png"><br><br>Folosind curba polara sa se determine valoarea lui  pentru sistemul inchis este stabil<br>
+<br><br><br><br><br><br><br>Seminar 2 SAE<br><br><br>Transformata Z a unor semnale simple poate fi calculata folosindu-se definitia. Se va prezenta, in continuare, modul de calcul pentru cateva din semnalele speciale din automatica.<br><br>Sa se determine <a data-tooltip-position="top" aria-label="Transformata Z" data-href="Transformata Z" href="transformata-z.html" class="internal-link" target="_self" rel="noopener">transformata Z</a> pentru <a data-tooltip-position="top" aria-label="Semnale > Impulsul Dirac" data-href="Semnale#Impulsul Dirac" href="semnale.html#Impulsul_Dirac" class="internal-link" target="_self" rel="noopener">impulsul Dirac</a> definit cu relatia:<br><br><br>Se poate vedea usor ca versiunea esantionata si semnalul original sunt identice, deci:<br>
+prin urmare, transformata Laplace esantionata va fi:<br>
+de unde rezulta:<br>
+<br><br>Jeg de explicatie din seminar, indienii la ajutor!<br><br>Note
+Transformata Z se poate aplica doar pe semnale discrete, asa ca va trebui sa discretizam impulsul Dirac
+<br>Stim ca impulsul Dirac este de forma: Asta inseamna ca la timpul 0, semnalul are valoarea 1, la celelalte valori de timp este egal cu 0.<br>Stim ca formula <a data-tooltip-position="top" aria-label="Transformata Z" data-href="Transformata Z" href="transformata-z.html" class="internal-link" target="_self" rel="noopener">transformatei Z</a> este urmatoarea:<br>
+Inlocuind cu impulsul Dirac in formula generala, vom avea:<br><br>Insa stim ca impulsul Dirac are valoarea 1 doar in timpul 0, iar in rest 0, astfel vom avea:<br>
+De unde rezulta ca transformata Z a impulsului Dirac are valoarea:<br>
+<br><br><br>Un semnal specific sistemelor discrete, care poate fi realizat practic relativ uşor, într-o formă aproximativă, este impulsul unitar notat şi definit ca în relaţiile:<br><br>respectiv<br><br><br>Versiunea intarziata a acestui semnal este:<br><br>respectiv<br><br>unde  sau .<br><a data-href="Transformata Z" href="transformata-z.html" class="internal-link" target="_self" rel="noopener">Transformata Z</a> a impulsului unitar se poate calcula direct prin aplicarea relatiei de definitie:<br>
+<br><br>Se  calculeaza <a data-tooltip-position="top" aria-label="Transformata Z" data-href="Transformata Z" href="transformata-z.html" class="internal-link" target="_self" rel="noopener">transformata Z</a> pentru secventa <a data-tooltip-position="top" aria-label="Semnale > Treapta unitară" data-href="Semnale#Treapta unitară" href="semnale.html#Treapta_unitară" class="internal-link" target="_self" rel="noopener">treapta unitara</a> definita conform relatiei:<br><br><br>Cand functia treapta unitara este esantionata ideal se obtine un tren de impulsuri unitare. Aplicandu-se relatia de definitie a <a data-tooltip-position="top" aria-label="Transformata Z" data-href="Transformata Z" href="transformata-z.html" class="internal-link" target="_self" rel="noopener">transformatei Z</a> in acest caz se obtine:<br>
+Expresie care poate fi scris a in forma restransa:<br>
+<br>Note
+Forma restransa se obtine considerandu-se suma o <a data-tooltip-position="top" aria-label="Serii de puteri" data-href="Serii de puteri" href="serii-de-puteri.html" class="internal-link" target="_self" rel="noopener">serie de puteri</a> ale lui  si aplicandu-se apoi relatia:  Rezultatul este valabil daca 
+<br><br>Sa se calculeze <a data-tooltip-position="top" aria-label="Transformata Z" data-href="Transformata Z" href="transformata-z.html" class="internal-link" target="_self" rel="noopener">transformata Z</a> pentru functia exponentiala: Se considera ca pentru .<br><br>Aplicandu-se <a data-tooltip-position="top" aria-label="Transformata Z > Definitie" data-href="Transformata Z#Definitie" href="transformata-z.html#Definitie" class="internal-link" target="_self" rel="noopener">relatia de definitie</a> se obtine:<br>
+Notand cu , daca , adica daca , respectiv  si folosind rationamentul de la <a data-tooltip-position="top" aria-label="Seminar 2 SAE > ^11a1b7" data-href="Seminar 2 SAE#^11a1b7" href="seminar-2-sae.html#^11a1b7" class="internal-link" target="_self" rel="noopener">treapta unitara</a>, rezulta:<br>
+<br><br>Sa se calculeze <a data-tooltip-position="top" aria-label="Transformata Z" data-href="Transformata Z" href="transformata-z.html" class="internal-link" target="_self" rel="noopener">transformata Z</a> pentru semnalul  unde  si .<br><br>O soluţie rapidă se poate obţine dacă se observă că funcţia putere  constituie de fapt un caz particular al functiei exponentiale, deoarece se poate scrie succesiv:<br>
+Asadar solutia problemei este:<br>
+ unde .<br>Summary
+Rezumand rezultatele obtinute in exemplele anterioare vom avea urmatoarele perechi de <a data-tooltip-position="top" aria-label="Transformata Laplace" data-href="Transformata Laplace" href="transformata-laplace.html" class="internal-link" target="_self" rel="noopener">transformate Laplace</a> (TL) si <a data-tooltip-position="top" aria-label="Transformata Z" data-href="Transformata Z" href="transformata-z.html" class="internal-link" target="_self" rel="noopener">Z</a> (TZ):
+
+Aceste rezultate sunt utile pentru introducerea unei metode simple, cu caracter general, pentru calculul <a data-tooltip-position="top" aria-label="Transformata Z" data-href="Transformata Z" href="transformata-z.html" class="internal-link" target="_self" rel="noopener">transformatelor Z</a>.
+<br><br>Sa se calculeze <a data-tooltip-position="top" aria-label="Transformata Z" data-href="Transformata Z" href="transformata-z.html" class="internal-link" target="_self" rel="noopener">transformata Z</a> a functiei <a data-tooltip-position="top" aria-label="Semnale > Rampa unitara" data-href="Semnale#Rampa unitara" href="semnale.html#Rampa_unitara" class="internal-link" target="_self" rel="noopener">rampa unitara</a> <br><br>Se utilizeaza teorema derivarii partiale aplicata functiei exponentiale. Se observa ca:<br>
+Solutia problemei va fi:<br>
+<br><br>Sa se determine <a data-tooltip-position="top" aria-label="Transformata Z" data-href="Transformata Z" href="transformata-z.html" class="internal-link" target="_self" rel="noopener">transformatele Z</a> pentru semnalele:<br><br><br>Se va calcula mai intai <a data-tooltip-position="top" aria-label="Transformata Z" data-href="Transformata Z" href="transformata-z.html" class="internal-link" target="_self" rel="noopener">transformata Z</a> pentru , care are <a data-tooltip-position="top" aria-label="Transformata Laplace" data-href="Transformata Laplace" href="transformata-laplace.html" class="internal-link" target="_self" rel="noopener">transformata Laplace</a>:<br>
+cu radacinile simple . <br>Descompunerea in fractii simple este:<br>
+unde:<br><br>Se obtine astfel:<br>
+In final rezulta:<br><br><a data-href="Transformata Laplace" href="transformata-laplace.html" class="internal-link" target="_self" rel="noopener">Transformata Laplace</a> a functiei  este:<br>
+cu descompunerea in fractii simple se obtine:<br>
+unde<br><br>Inlocuind  si  in descompunere se obtine in continuare:<br>
+de unde rezulta:<br><br><br>Sa se calculeze <a data-tooltip-position="top" aria-label="Transformata Z" data-href="Transformata Z" href="transformata-z.html" class="internal-link" target="_self" rel="noopener">transformata Z</a> pentru semnalul <br><br>Se cunoaste ca<br>
+Se aplica in continuare teorema deplasarii in complex, de unde rezulta:<br><br><br>Sa se deermine <a data-tooltip-position="top" aria-label="Transformata Z" data-href="Transformata Z" href="transformata-z.html" class="internal-link" target="_self" rel="noopener">transformatele Z</a> pentru functiile: <br><br><br>Se aplica teorema deplasarii in complex. In aceste conditii se obtine:<br><br><br>Fiind data functia complexa (<a data-tooltip-position="top" aria-label="Transformata Z" data-href="Transformata Z" href="transformata-z.html" class="internal-link" target="_self" rel="noopener">transformata Z</a>):<br>
+Sa se determine valoarea finala .<br><br>Deoarece functia complexa are polii in planul z in interiorul cercului de raza unitara, se poate aplica teorema valorii finale. Astfel, se obtine:<br>
+<br><br>Seminar 3 SAE<br><br><br><br>Să se determine ecuaţia cu diferenţe pentru sistemul de ordinul întâi cu funcţia de transfer:<br><br><br>Având în vedere relaţia de definiţie a funcţiei de transfer, rezultă într-o primă etapă:<br><br>respectiv:<br><br>Ecuaţia diferenţială se obţine prin aplicarea transformatei Laplace inverse, folosind proprietatea de derivare a transformatei Laplace, în condiţii iniţiale nule, pentru mărimea de ieşire  :<br><br>Aproximând derivata cu diferenţa de ordinul unu se obţine succesiv:<br><br>respectiv:<br>unde  şi .<br><br><br>Să se determine funcţia de transfer operaţională pentru elementul de ordinul unu.<br><br>Ecuaţia cu diferenţe pentru elementul de ordinul unu este :<br>
+Folosind operatorul de întârziere cu un pas:<br>
+în această ecuaţie, se obţine:<br>
+<br>de unde rezultă într-o primă etapă:<br><br>deci funcţia de transfer operaţională este:<br><br><br>Se dă sistemul continuu cu funcţia de transfer<br>cu <br>Să se determine <a data-tooltip-position="top" aria-label="Calculul analitic aproximativ al funcţiilor de transfer z > Calculul analitic aproximativ cu metoda transformatei z care conservă repartiţia poli-zerouri a sistemului continuu" data-href="Calculul analitic aproximativ al funcţiilor de transfer z#Calculul analitic aproximativ cu metoda transformatei z care conservă repartiţia poli-zerouri a sistemului continuu" href="calculul-analitic-aproximativ-al-funcţiilor-de-transfer-z.html#Calculul_analitic_aproximativ_cu_metoda_transformatei_z_care_conservă_repartiţia_poli-zerouri_a_sistemului_continuu" class="internal-link" target="_self" rel="noopener">transformata z matched</a>.<br><br>
+<br>
+Pasul 1: Având în vedere transformarea din s în  a polului şi zeroului într-o primî etapă vom avea
+
+<br>
+Pasul 2: nu este necesar în acest caz.
+
+<br>
+Pasul 3 Se calculează factorul de amplificare al funcţiei de transfer  folosind relaţiile succesive  :
+
+<br>În final se obţine funcţia de transfer z matched cu expresia literală:<br><br>Se dă sistemul continuu cu funcţia de transfer<br> сu <br>Să se determine <a data-tooltip-position="top" aria-label="Calculul analitic aproximativ al funcţiilor de transfer z > Transformata z matched" data-href="Calculul analitic aproximativ al funcţiilor de transfer z#Transformata z matched" href="calculul-analitic-aproximativ-al-funcţiilor-de-transfer-z.html#Transformata_z_matched" class="internal-link" target="_self" rel="noopener">transformata z matched</a>.<br><br><br><br><br>Explicatia anterioara este inutila<br>Pasii necesari realizarii transformatei z matched sunt:<br><br>Se realizeaza folosind <a data-tooltip-position="top" aria-label="Transformata Z" data-href="Transformata Z" href="transformata-z.html" class="internal-link" target="_self" rel="noopener">transformata z</a>.<br><br>Chiar daca nu exista zerouri scrise in functie, ele exista la infinit. Numarul de poli si zerouri intr-o functie de transfer este mereu egal. Se adauga astfel zerouri la infinit, adica  sau  la numitor.<br><br>Se sterg poli la infinit pana cand functia de transfer este strict realizabila, adica numarul de poli sa fie egal cu numarul de zerouri -1.<br><br>Pentru a afla factorul de amplificare in planul , se echivaleaza  cu , iar in planul , se echivaleaza  cu . Astfel, vom rezolva ecuatia: <br><br><br>Paşii 1 şi 2 furnizează funcţia de transfer z cu expresia:<br><br>Pasul 3: Se calculează factorul de amplificare al funcţiei de transfer  folosind relaţiile succesive  :<br><br>Funcţia de transfer z matched care se obţine are expresia literală<br><br><br>Pentru sistemul de ordinul doi cu funcţia de transfer standard<br>având  rads  şi <br>să se determine modelele discrete aproximative care rezultă cu metodele de integrare numerică a dreptunghiului înapoi (în spate), a dreptunghiului înainte (în faţă), şi a trapezului (<a data-href="Calculul analitic aproximativ al funcţiilor de transfer z" href="calculul-analitic-aproximativ-al-funcţiilor-de-transfer-z.html" class="internal-link" target="_self" rel="noopener">Calculul analitic aproximativ al funcţiilor de transfer z</a>).<br>Se adoptă .<br><br>Se determină funcțiile de transfer z<br>
+<br>unde
+<br> unde 
+<br>
+
+
+<br><br>Seminar 4 SAE<br><br><br><br>Să se calculeze <a data-tooltip-position="top" aria-label="Transformata Z > Transformata z inversa" data-href="Transformata Z#Transformata z inversa" href="transformata-z.html#Transformata_z_inversa" class="internal-link" target="_self" rel="noopener">transformata Z inversa</a> pentru funcţia complexă:<br><br><br>
+<br>
+Se detemină rezidurile funcţiei:pentru polii  şi . Se obţine astfel semnalul eşantionat:
+
+<br>
+Urmărindu-se etapele algoritmului metodei descompunerii în fracţii simple rezultă succesiv:unde:Astfel, se obţine:de unde, prin aplicarea transformatei  inverse, rezultă:
+
+<br><br>Să se determine secvenţa temporală a semnalului  cu <a data-tooltip-position="top" aria-label="Transformata Z > Metoda seriilor infinite de puteri ale lui $z {-1}$" data-href="Transformata Z#Metoda seriilor infinite de puteri ale lui $z {-1}$" href="transformata-z.html#Metoda_seriilor_infinite_de_puteri_ale_lui_$z_{-1}$" class="internal-link" target="_self" rel="noopener">metoda seriilor infinite de puteri ale lui z-1</a>, pentru funcţia complexă:<br><br><br>Se calculează mai întâi forma în  :<br><br>apoi se împart cele două polinoame conform schemei prezentate în continuare:<br><img alt="Pasted image 20240304170941.png" src="attachments\pasted-image-20240304170941.png"><br>Prin comparaţie directă cu:<br><br>rezultă secvenţa temporală<br><br>care poate fi scrisă în mod echivalent <br>Calculul analitic cu metoda seriilor infinite de puteri ale lui  este laborios, preferându-se în acest caz calculul numeric asistat de calculator.<br><br>Se va analiza răspunsul sistemului discret cu element de reţinere de ordin zero, cu schema bloc prezentată în figura urmatoare:<br><img src="https://cdn.mathpix.com/cropped/2024_03_04_e1e0bee3e9c9436e6cd4g-2.jpg?height=235&amp;width=1219&amp;top_left_y=1847&amp;top_left_x=424" referrerpolicy="no-referrer"><br><br>Funcţia de transfer a elementului continuu cu ER se determină cu relaţiile succesive:<br><br>respectiv<br>
+de unde după efectuarea calculelor se obţine:<br><br>Înlocuind  şi  rezultă funcţiile de transfer  ale sistemului discret în circuit deschis:<br><br>respectiv a sistemului în circuit închis:<br><br>Sistemul discret cu element de reţinere de ordinul zero a fost simulat în MATLAB şi răspunsul obținut este prezentat grafic în figura 4.46 .<br>Folosind meniul Characteristic în fereastra grafică MATLAB obţinută cu funcţia step se constată că în acest caz suprareglajul este de , deci mult mai mic decât la sistemul eşantionat fără ERO, fiind destul de aproape de valoarea suprareglajului sistemului continuu. Acest fapt rezultă ca urmare a valorii mici a perioadei de eşantionare.<br>Din grafic se observă, de asemenea, că timpul de stabilire (cu valoarea de 8,75) este mai mare decât la sistemul continuu şi la sistemul eşantionat fără ERO.<br>Cu toate că suprareglajul sistemului cu ERO este sensibil mai mic decât la sistemul eşantionat fără ERO, totuşi rezerva de stabilitate a primului este mult mai mică. Astfel, valoarea factorului de amplificare  la limita de stabilitate este  la sistemul cu ER0, faţă de  cât este la sistemul eşantionat fără ERO.<br><img src="https://cdn.mathpix.com/cropped/2024_03_04_e1e0bee3e9c9436e6cd4g-3.jpg?height=594&amp;width=1008&amp;top_left_y=1716&amp;top_left_x=524" referrerpolicy="no-referrer"><br>Fig. 4.49<br>Din examinarea curbelor prezentate se constată că, în cazul unei perioade de eşantionare mai mică (  în loc de  ) la sistemul eşantionat fără ER0 suprereglajul creşte în mod apreciabil (fiind acum de  faţă de  ). De asemenea, craşte gradul de oscilaţie în intervalul corespunzător regimului tranzitoriu. Cu toate acestea durata timpului de stabilire se modifică puţin (de la 7,5 la 7,3 s) şi în<br>mod aparent paradoxal rezerva de stabilitate creşte de aproximativ 3 ori (la limita de stabilitate avem  pentru sistemul cu , respectiv  la sistemul cu .<br>În ceea ce priveşte sistemul discret cu ERO se constată că la reducerea perioadei de eşantionare se reduce şi suprareglajul (de la  la  la  pentru sistemul cu  ). De asemenea, se reduce timpul de stabilire, care la  este de  şi în general răspunsul sistemului discret se apropie mult de cel al sistemului continuu. Cu toate acestea rezerva de stabilitate, care creşte de la 7 pentru  la 20,7 pentru , este cu mult mai mică decât cea a sistemului continuu.<br>Concluzionând, prin eşantionare se reduce rezerva de stabilitate şi creşte suprareglajul, respectiv gradul de oscilaţie (numai la sistemele fără ER0).<br><br>Considerăm sistemul cu ecuaţia caracteristică în <br><br>Folosind criteriul Routh să se evalueze stabilitatea sistemului discret.<br><br>Din expresia factorizată a ecuaţiei caracteristice se constată uşor că sistemul este instabil deoarece o rădăcină este egală cu 1 (aşadar plasată pe cercul de rază unitară), iar alta are valoarea -2 , deci este în afara cercului de rază unitară.<br>Pentru a aplica criteriul Routh se aplică schimbarea de variabilă ecuaţiei caracteristice în z: Astfel se obţine:<br><br>de unde se obţine ecuaţia caracteristică în  cu tabloul Routh:<br><br>Deoarece coeficienţii din rândul doi sunt toți egali cu zero aceştia se înlocuiesc cu valorile obţinute după derivarea polinomului format cu coeficienţii din rândul anterior adică, . Examinând termenii din prima coloană se observă că există o schimbare de semn deci sistemul discret este instabil. Rezultatul obţinut (sistem instabil) era previzibil deoarece:<br>
+<br>nu toţi coeficienţii polinomului caracteristic  sunt pozitivi şi diferiţi de zero;
+<br>rădăcinile ecuaţiei caracteristice , care se pot calcula uşor, sunt . Prin urmare avem o rărdăcină nulă şi una în semiplanul complex drept.
+<br>O aplicaţie interesantă a criteriului Routh este analiza stabilităţii sistemele discrete în funcţie de valorile perioadei de eşantionare.<br><br>Seminar 5 SAE<br><br><br><br>Să se verifice că modelul la stare cu matricele:<br><br>are funcţia de transfer:<br><br><br>Funcţia de transfer se deduce conform relaţiei de definiţie .<br>În prima etapă se determină matricea :<br><br>şi apoi se scrie matricea transpusă:<br><br>Se calculează :<br><br>Se determină cofactorii matricei transpuse:<br><br>Având în vedere că :<br><br>se calculează produsul matriceal:<br><br>Se înmulţeşte rezultatul, la stânga, cu matricea  şi astfel se obţine:<br><br>adică tocmai funcţia de transfer dată.<br><br>Fie sistemul cu modelul descris de ecuaţia matriceală de stare:<br><br>Să se arate că acest sistem este controlabil.<br><br>Matricele sistemului sunt<br><br>deci<br><br><br><br>de unde se obţine matricea de controlabilitate<br><br>Deoarece , rezultă că sistemul este controlabil.<br>Soluţie alternativă<br>Modelul cu graf de semnal pentru sistemul studiat este prezentat în figura 4.61.<br><img src="https://cdn.mathpix.com/cropped/2024_03_04_1fd287cad61561871fbdg-3.jpg?height=334&amp;width=1090&amp;top_left_y=775&amp;top_left_x=563" referrerpolicy="no-referrer"><br>Figura 4.61.<br>De aici se poate observa că avem căi de la semnalul de intrare  sau  la toate variabilele de stare ale sistemului, deci sistemul este controlabil.<br><br>Considerăm din nou sistemul de la exercițiul anterior, cu modelul descris de ecuaţiile matriceală de stare şi de ieşire:<br><br><br>Arătaţi că acest sistem este observabil.<br><br>Matricele sistemului sunt<br><br>deci avem<br><br><br>Prin urmare matricea de observabilitate va <br><br>Deoarece, <br><br>Seminar 6 SAE<br><br><br><br>Se consideră funcția de transfer Z a unui sistem în circuit deschis de forma (avem în vedere că . Să se traseze locul rădăcinilor:<br><br>unde .<br><br><br>Ecuaţia caracteristică a sistemului de reglare este<br><br>unde<br><br>Cu un program simplu în MATLAB se poate vedea că pentru ,  şi . Factorul de amplificare  se presupune pozitiv şi variabil de la 0 la .<br><br>Deoarece gradul polinomului de la numitor este , locul rădăcinilor are 2 ramuri. Funcţia de transfer a sistemului deschis are 2 poli:<br>, сu , şi un zero:<br> , cu  când .<br>În figura 4.58 se prezintă repartiţia poli-zero pentru sistemul cu funcţia de transfer dată în cazul . În această situaţie  şi .<br><img src="https://cdn.mathpix.com/cropped/2024_08_09_197c17df9d350146dfb3g-2.jpg?height=883&amp;width=1234&amp;top_left_y=255&amp;top_left_x=411" referrerpolicy="no-referrer"><br><br>Locul rădăcinilor pe axa reală are două porţiuni şi anume:<br>
+<br>între polii  şi ;
+<br>între zeroul  şi .
+<br><br>Numărul asimptotelor este . Ca şi în exemplul precedent, singura asimptotă este pe axa reală şi corespunde locului rădăcinilor cuprins între  şi .<br><br>Deoarece există porţiuni ale locului pe axa reală între doi poli respectiv zerouri (unul finit, altul la infinit) vom avea puncte de ramificaţie. Aceste puncte se determină rezolvând ecuaţia<br>unde .<br>Se obţine succesiv:<br><br>respectiv<br><br>cu soluţiile<br><br>Pentru , valorile celor două rădăcini sunt  şi . Se poate vedea că aceste puncte de pe axa reală sunt într-adevăr puncte de ramificaţie fiind amplasate între cei doi poli ( 0,7405 şi 1 ), respectiv între zerouri  şi .<br>Ca şi în exemplul precedent, între cele două puncte de ramificaţie locul rădăcinilor are forma unui cerc. Procedând ca mai înainte se obţine ecuaţia:<br>  <br>deci cercul are centrul în punctul  şi raza . Pentru , centrul cercului va fi în punctul  şi are raza .  <br><br>Funcţia de transfer z a sistemului deschis nu are poli sau zerouri cu valori complexe.<br><br>Locul rădăcinilor prezintă 3 puncte în care sistemul închis este la limita de stabilitate. Două din aceste puncte corespund unor rădăcini complex conjugate şi prin urmare în aceste puncte avem aceeaşi valoare a factorului de amplificare . Pentru a datermina valoarea lui  corespunzătoare rădăcinilor complexe, folosim criteriul Routh bazat pe transformarea omografică . În acest scop se foloseşte relaţia:<br><br>de unde rezultă ecuaţia caracteristică în  :<br>
+<br>în care  şi .<br>
+În continuare, cu substituţia<br>
+se determină ecuaţia caracteristică în  :<br>
+  respectiv:<br>
+  Tabelul Routh asociat acestei ecuaţii este:<br><br>La limita de stabilitate ecuaţia caracteristică în  are rădăcinile imaginare , deci în tabloul Routh trebuie să avem un rând de zerouri. Acest lucru este realizat dacă termenul din rândul  coloana 1 este egal cu zero, deci dacă:<br>, respectiv <br>de unde, având în vedere că<br>rezultă<br>Pentru  rezultă că factorul de amplificare pentru care sistemul discret analizat este la limita de stabilitate are valoarea .<br>Al treilea punct în care sistemul este la limita de stabilitate este , iar factorul de amplificare corespunzător  se calculează cu relaţia:<br><br>Pentru  rezultă , valoare care nu prezintă interes deoarece este mult mai mare decât  obţinută la limita de stabilitate pentru rădăcinile complexe.<br>Locul rădăcinilor pentru o perioadă de eşantionare cu valoarea  are următoarele date numerice:<br>
+<br>;
+<br>
+<br>, centrul ;
+<br>.
+<br><br><br>Transformata Z se aplica semnalelor esantionate<br><br><br>
+<br>Liniaritatea: 
+<br>Superpozitia: 
+<br>Deplasarea sau intarzierea in timp: 
+<br>Deplasarea in complex:<br>
+
+]]></description><link>examen-sae.html</link><guid isPermaLink="false">Examen SAE.md</guid><pubDate>Sun, 11 Aug 2024 12:27:33 GMT</pubDate><enclosure url="attachments\pasted-image-20240304170941.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;attachments\pasted-image-20240304170941.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Seminar 2 SAE]]></title><description><![CDATA[ 
+ <br>Transformata Z a unor semnale simple poate fi calculata folosindu-se definitia. Se va prezenta, in continuare, modul de calcul pentru cateva din semnalele speciale din automatica.<br><br>Sa se determine <a data-tooltip-position="top" aria-label="Transformata Z" data-href="Transformata Z" href="transformata-z.html" class="internal-link" target="_self" rel="noopener">transformata Z</a> pentru <a data-tooltip-position="top" aria-label="Semnale > Impulsul Dirac" data-href="Semnale#Impulsul Dirac" href="semnale.html#Impulsul_Dirac" class="internal-link" target="_self" rel="noopener">impulsul Dirac</a> definit cu relatia:<br><br><br>Se poate vedea usor ca versiunea esantionata si semnalul original sunt identice, deci:<br>
+prin urmare, transformata Laplace esantionata va fi:<br>
+de unde rezulta:<br>
+<br><br>Jeg de explicatie din seminar, indienii la ajutor!<br><br>Note
+Transformata Z se poate aplica doar pe semnale discrete, asa ca va trebui sa discretizam impulsul Dirac
+<br>Stim ca impulsul Dirac este de forma: Asta inseamna ca la timpul 0, semnalul are valoarea 1, la celelalte valori de timp este egal cu 0.<br>Stim ca formula <a data-tooltip-position="top" aria-label="Transformata Z" data-href="Transformata Z" href="transformata-z.html" class="internal-link" target="_self" rel="noopener">transformatei Z</a> este urmatoarea:<br>
+Inlocuind cu impulsul Dirac in formula generala, vom avea:<br><br>Insa stim ca impulsul Dirac are valoarea 1 doar in timpul 0, iar in rest 0, astfel vom avea:<br>
+De unde rezulta ca transformata Z a impulsului Dirac are valoarea:<br>
+<br><br><br>Un semnal specific sistemelor discrete, care poate fi realizat practic relativ uşor, într-o formă aproximativă, este impulsul unitar notat şi definit ca în relaţiile:<br><br>respectiv<br><br><br>Versiunea intarziata a acestui semnal este:<br><br>respectiv<br><br>unde  sau .<br><a data-href="Transformata Z" href="transformata-z.html" class="internal-link" target="_self" rel="noopener">Transformata Z</a> a impulsului unitar se poate calcula direct prin aplicarea relatiei de definitie:<br>
+<br><br>Se  calculeaza <a data-tooltip-position="top" aria-label="Transformata Z" data-href="Transformata Z" href="transformata-z.html" class="internal-link" target="_self" rel="noopener">transformata Z</a> pentru secventa <a data-tooltip-position="top" aria-label="Semnale > Treapta unitară" data-href="Semnale#Treapta unitară" href="semnale.html#Treapta_unitară" class="internal-link" target="_self" rel="noopener">treapta unitara</a> definita conform relatiei:<br><br><br>Cand functia treapta unitara este esantionata ideal se obtine un tren de impulsuri unitare. Aplicandu-se relatia de definitie a <a data-tooltip-position="top" aria-label="Transformata Z" data-href="Transformata Z" href="transformata-z.html" class="internal-link" target="_self" rel="noopener">transformatei Z</a> in acest caz se obtine:<br>
+Expresie care poate fi scris a in forma restransa:<br>
+<br>Note
+Forma restransa se obtine considerandu-se suma o <a data-tooltip-position="top" aria-label="Serii de puteri" data-href="Serii de puteri" href="serii-de-puteri.html" class="internal-link" target="_self" rel="noopener">serie de puteri</a> ale lui  si aplicandu-se apoi relatia:  Rezultatul este valabil daca 
+<br><br>Sa se calculeze <a data-tooltip-position="top" aria-label="Transformata Z" data-href="Transformata Z" href="transformata-z.html" class="internal-link" target="_self" rel="noopener">transformata Z</a> pentru functia exponentiala: Se considera ca pentru .<br><br>Aplicandu-se <a data-tooltip-position="top" aria-label="Transformata Z > Definitie" data-href="Transformata Z#Definitie" href="transformata-z.html#Definitie" class="internal-link" target="_self" rel="noopener">relatia de definitie</a> se obtine:<br>
+Notand cu , daca , adica daca , respectiv  si folosind rationamentul de la <a data-tooltip-position="top" aria-label="Seminar 2 SAE > ^11a1b7" data-href="Seminar 2 SAE#^11a1b7" href="seminar-2-sae.html#^11a1b7" class="internal-link" target="_self" rel="noopener">treapta unitara</a>, rezulta:<br>
+<br><br>Sa se calculeze <a data-tooltip-position="top" aria-label="Transformata Z" data-href="Transformata Z" href="transformata-z.html" class="internal-link" target="_self" rel="noopener">transformata Z</a> pentru semnalul  unde  si .<br><br>O soluţie rapidă se poate obţine dacă se observă că funcţia putere  constituie de fapt un caz particular al functiei exponentiale, deoarece se poate scrie succesiv:<br>
+Asadar solutia problemei este:<br>
+ unde .<br>Summary
+Rezumand rezultatele obtinute in exemplele anterioare vom avea urmatoarele perechi de <a data-tooltip-position="top" aria-label="Transformata Laplace" data-href="Transformata Laplace" href="transformata-laplace.html" class="internal-link" target="_self" rel="noopener">transformate Laplace</a> (TL) si <a data-tooltip-position="top" aria-label="Transformata Z" data-href="Transformata Z" href="transformata-z.html" class="internal-link" target="_self" rel="noopener">Z</a> (TZ):
+
+Aceste rezultate sunt utile pentru introducerea unei metode simple, cu caracter general, pentru calculul <a data-tooltip-position="top" aria-label="Transformata Z" data-href="Transformata Z" href="transformata-z.html" class="internal-link" target="_self" rel="noopener">transformatelor Z</a>.
+<br><br>Sa se calculeze <a data-tooltip-position="top" aria-label="Transformata Z" data-href="Transformata Z" href="transformata-z.html" class="internal-link" target="_self" rel="noopener">transformata Z</a> a functiei <a data-tooltip-position="top" aria-label="Semnale > Rampa unitara" data-href="Semnale#Rampa unitara" href="semnale.html#Rampa_unitara" class="internal-link" target="_self" rel="noopener">rampa unitara</a> <br><br>Se utilizeaza teorema derivarii partiale aplicata functiei exponentiale. Se observa ca:<br>
+Solutia problemei va fi:<br>
+<br><br>Sa se determine <a data-tooltip-position="top" aria-label="Transformata Z" data-href="Transformata Z" href="transformata-z.html" class="internal-link" target="_self" rel="noopener">transformatele Z</a> pentru semnalele:<br><br><br>Se va calcula mai intai <a data-tooltip-position="top" aria-label="Transformata Z" data-href="Transformata Z" href="transformata-z.html" class="internal-link" target="_self" rel="noopener">transformata Z</a> pentru , care are <a data-tooltip-position="top" aria-label="Transformata Laplace" data-href="Transformata Laplace" href="transformata-laplace.html" class="internal-link" target="_self" rel="noopener">transformata Laplace</a>:<br>
+cu radacinile simple . <br>Descompunerea in fractii simple este:<br>
+unde:<br><br>Se obtine astfel:<br>
+In final rezulta:<br><br><a data-href="Transformata Laplace" href="transformata-laplace.html" class="internal-link" target="_self" rel="noopener">Transformata Laplace</a> a functiei  este:<br>
+cu descompunerea in fractii simple se obtine:<br>
+unde<br><br>Inlocuind  si  in descompunere se obtine in continuare:<br>
+de unde rezulta:<br><br><br>Sa se calculeze <a data-tooltip-position="top" aria-label="Transformata Z" data-href="Transformata Z" href="transformata-z.html" class="internal-link" target="_self" rel="noopener">transformata Z</a> pentru semnalul <br><br>Se cunoaste ca<br>
+Se aplica in continuare teorema deplasarii in complex, de unde rezulta:<br><br><br>Sa se deermine <a data-tooltip-position="top" aria-label="Transformata Z" data-href="Transformata Z" href="transformata-z.html" class="internal-link" target="_self" rel="noopener">transformatele Z</a> pentru functiile: <br><br><br>Se aplica teorema deplasarii in complex. In aceste conditii se obtine:<br><br><br>Fiind data functia complexa (<a data-tooltip-position="top" aria-label="Transformata Z" data-href="Transformata Z" href="transformata-z.html" class="internal-link" target="_self" rel="noopener">transformata Z</a>):<br>
+Sa se determine valoarea finala .<br><br>Deoarece functia complexa are polii in planul z in interiorul cercului de raza unitara, se poate aplica teorema valorii finale. Astfel, se obtine:<br>
+]]></description><link>seminar-2-sae.html</link><guid isPermaLink="false">Seminar 2 SAE.md</guid><pubDate>Fri, 02 Aug 2024 10:17:22 GMT</pubDate></item><item><title><![CDATA[Seminar 3 SAE]]></title><description><![CDATA[ 
+ <br><br>Să se determine ecuaţia cu diferenţe pentru sistemul de ordinul întâi cu funcţia de transfer:<br><br><br>Având în vedere relaţia de definiţie a funcţiei de transfer, rezultă într-o primă etapă:<br><br>respectiv:<br><br>Ecuaţia diferenţială se obţine prin aplicarea transformatei Laplace inverse, folosind proprietatea de derivare a transformatei Laplace, în condiţii iniţiale nule, pentru mărimea de ieşire  :<br><br>Aproximând derivata cu diferenţa de ordinul unu se obţine succesiv:<br><br>respectiv:<br>unde  şi .<br><br><br>Să se determine funcţia de transfer operaţională pentru elementul de ordinul unu.<br><br>Ecuaţia cu diferenţe pentru elementul de ordinul unu este :<br>
+Folosind operatorul de întârziere cu un pas:<br>
+în această ecuaţie, se obţine:<br>
+<br>de unde rezultă într-o primă etapă:<br><br>deci funcţia de transfer operaţională este:<br><br><br>Se dă sistemul continuu cu funcţia de transfer<br>cu <br>Să se determine <a data-tooltip-position="top" aria-label="Calculul analitic aproximativ al funcţiilor de transfer z > Calculul analitic aproximativ cu metoda transformatei z care conservă repartiţia poli-zerouri a sistemului continuu" data-href="Calculul analitic aproximativ al funcţiilor de transfer z#Calculul analitic aproximativ cu metoda transformatei z care conservă repartiţia poli-zerouri a sistemului continuu" href="calculul-analitic-aproximativ-al-funcţiilor-de-transfer-z.html#Calculul_analitic_aproximativ_cu_metoda_transformatei_z_care_conservă_repartiţia_poli-zerouri_a_sistemului_continuu" class="internal-link" target="_self" rel="noopener">transformata z matched</a>.<br><br>
+<br>
+Pasul 1: Având în vedere transformarea din s în  a polului şi zeroului într-o primî etapă vom avea
+
+<br>
+Pasul 2: nu este necesar în acest caz.
+
+<br>
+Pasul 3 Se calculează factorul de amplificare al funcţiei de transfer  folosind relaţiile succesive  :
+
+<br>În final se obţine funcţia de transfer z matched cu expresia literală:<br><br>Se dă sistemul continuu cu funcţia de transfer<br> сu <br>Să se determine <a data-tooltip-position="top" aria-label="Calculul analitic aproximativ al funcţiilor de transfer z > Transformata z matched" data-href="Calculul analitic aproximativ al funcţiilor de transfer z#Transformata z matched" href="calculul-analitic-aproximativ-al-funcţiilor-de-transfer-z.html#Transformata_z_matched" class="internal-link" target="_self" rel="noopener">transformata z matched</a>.<br><br><br><br><br>Explicatia anterioara este inutila<br>Pasii necesari realizarii transformatei z matched sunt:<br><br>Se realizeaza folosind <a data-tooltip-position="top" aria-label="Transformata Z" data-href="Transformata Z" href="transformata-z.html" class="internal-link" target="_self" rel="noopener">transformata z</a>.<br><br>Chiar daca nu exista zerouri scrise in functie, ele exista la infinit. Numarul de poli si zerouri intr-o functie de transfer este mereu egal. Se adauga astfel zerouri la infinit, adica  sau  la numitor.<br><br>Se sterg poli la infinit pana cand functia de transfer este strict realizabila, adica numarul de poli sa fie egal cu numarul de zerouri -1.<br><br><br><br>Paşii 1 şi 2 furnizează funcţia de transfer z cu expresia:<br><br>Pasul 3: Se calculează factorul de amplificare al funcţiei de transfer  folosind relaţiile succesive  :<br><br>Funcţia de transfer z matched care se obţine are expresia literală<br><br><br>Pentru sistemul de ordinul doi cu funcţia de transfer standard<br>având  rads  şi <br>să se determine modelele discrete aproximative care rezultă cu metodele de integrare numerică a dreptunghiului înapoi (în spate), a dreptunghiului înainte (în faţă), şi a trapezului (<a data-href="Calculul analitic aproximativ al funcţiilor de transfer z" href="calculul-analitic-aproximativ-al-funcţiilor-de-transfer-z.html" class="internal-link" target="_self" rel="noopener">Calculul analitic aproximativ al funcţiilor de transfer z</a>).<br>Se adoptă .<br><br>Se determină funcțiile de transfer z<br>
+<br>unde
+<br> unde 
+<br>
+
+
+]]></description><link>seminar-3-sae.html</link><guid isPermaLink="false">Seminar 3 SAE.md</guid><pubDate>Thu, 08 Aug 2024 10:54:21 GMT</pubDate></item><item><title><![CDATA[Seminar 4 SAE]]></title><description><![CDATA[ 
+ <br><br>Să se calculeze <a data-tooltip-position="top" aria-label="Transformata Z > Transformata z inversa" data-href="Transformata Z#Transformata z inversa" href="transformata-z.html#Transformata_z_inversa" class="internal-link" target="_self" rel="noopener">transformata Z inversa</a> pentru funcţia complexă:<br><br><br>
+<br>
+Se detemină rezidurile funcţiei:pentru polii  şi . Se obţine astfel semnalul eşantionat:
+
+<br>
+Urmărindu-se etapele algoritmului metodei descompunerii în fracţii simple rezultă succesiv:unde:Astfel, se obţine:de unde, prin aplicarea transformatei  inverse, rezultă:
+
+<br><br>Să se determine secvenţa temporală a semnalului  cu <a data-tooltip-position="top" aria-label="Transformata Z > Metoda seriilor infinite de puteri ale lui $z {-1}$" data-href="Transformata Z#Metoda seriilor infinite de puteri ale lui $z {-1}$" href="transformata-z.html#Metoda_seriilor_infinite_de_puteri_ale_lui_$z_{-1}$" class="internal-link" target="_self" rel="noopener">metoda seriilor infinite de puteri ale lui z-1</a>, pentru funcţia complexă:<br><br><br>Se calculează mai întâi forma în  :<br><br>apoi se împart cele două polinoame conform schemei prezentate în continuare:<br><img alt="Pasted image 20240304170941.png" src="attachments\pasted-image-20240304170941.png"><br>Prin comparaţie directă cu:<br><br>rezultă secvenţa temporală<br><br>care poate fi scrisă în mod echivalent <br>Calculul analitic cu metoda seriilor infinite de puteri ale lui  este laborios, preferându-se în acest caz calculul numeric asistat de calculator.<br><br>Se va analiza răspunsul sistemului discret cu element de reţinere de ordin zero, cu schema bloc prezentată în figura urmatoare:<br><img src="https://cdn.mathpix.com/cropped/2024_03_04_e1e0bee3e9c9436e6cd4g-2.jpg?height=235&amp;width=1219&amp;top_left_y=1847&amp;top_left_x=424" referrerpolicy="no-referrer"><br><br>Funcţia de transfer a elementului continuu cu ER se determină cu relaţiile succesive:<br><br>respectiv<br>
+de unde după efectuarea calculelor se obţine:<br><br>Înlocuind  şi  rezultă funcţiile de transfer  ale sistemului discret în circuit deschis:<br><br>respectiv a sistemului în circuit închis:<br><br>Sistemul discret cu element de reţinere de ordinul zero a fost simulat în MATLAB şi răspunsul obținut este prezentat grafic în figura 4.46 .<br>Folosind meniul Characteristic în fereastra grafică MATLAB obţinută cu funcţia step se constată că în acest caz suprareglajul este de , deci mult mai mic decât la sistemul eşantionat fără ERO, fiind destul de aproape de valoarea suprareglajului sistemului continuu. Acest fapt rezultă ca urmare a valorii mici a perioadei de eşantionare.<br>Din grafic se observă, de asemenea, că timpul de stabilire (cu valoarea de 8,75) este mai mare decât la sistemul continuu şi la sistemul eşantionat fără ERO.<br>Cu toate că suprareglajul sistemului cu ERO este sensibil mai mic decât la sistemul eşantionat fără ERO, totuşi rezerva de stabilitate a primului este mult mai mică. Astfel, valoarea factorului de amplificare  la limita de stabilitate este  la sistemul cu ER0, faţă de  cât este la sistemul eşantionat fără ERO.<br><img src="https://cdn.mathpix.com/cropped/2024_03_04_e1e0bee3e9c9436e6cd4g-3.jpg?height=594&amp;width=1008&amp;top_left_y=1716&amp;top_left_x=524" referrerpolicy="no-referrer"><br>Fig. 4.49<br>Din examinarea curbelor prezentate se constată că, în cazul unei perioade de eşantionare mai mică (  în loc de  ) la sistemul eşantionat fără ER0 suprereglajul creşte în mod apreciabil (fiind acum de  faţă de  ). De asemenea, craşte gradul de oscilaţie în intervalul corespunzător regimului tranzitoriu. Cu toate acestea durata timpului de stabilire se modifică puţin (de la 7,5 la 7,3 s) şi în<br>mod aparent paradoxal rezerva de stabilitate creşte de aproximativ 3 ori (la limita de stabilitate avem  pentru sistemul cu , respectiv  la sistemul cu .<br>În ceea ce priveşte sistemul discret cu ERO se constată că la reducerea perioadei de eşantionare se reduce şi suprareglajul (de la  la  la  pentru sistemul cu  ). De asemenea, se reduce timpul de stabilire, care la  este de  şi în general răspunsul sistemului discret se apropie mult de cel al sistemului continuu. Cu toate acestea rezerva de stabilitate, care creşte de la 7 pentru  la 20,7 pentru , este cu mult mai mică decât cea a sistemului continuu.<br>Concluzionând, prin eşantionare se reduce rezerva de stabilitate şi creşte suprareglajul, respectiv gradul de oscilaţie (numai la sistemele fără ER0).<br><br>Considerăm sistemul cu ecuaţia caracteristică în <br><br>Folosind criteriul Routh să se evalueze stabilitatea sistemului discret.<br><br>Din expresia factorizată a ecuaţiei caracteristice se constată uşor că sistemul este instabil deoarece o rădăcină este egală cu 1 (aşadar plasată pe cercul de rază unitară), iar alta are valoarea -2 , deci este în afara cercului de rază unitară.<br>Pentru a aplica criteriul Routh se aplică schimbarea de variabilă ecuaţiei caracteristice în z: Astfel se obţine:<br><br>de unde se obţine ecuaţia caracteristică în  cu tabloul Routh:<br><br>Deoarece coeficienţii din rândul doi sunt toți egali cu zero aceştia se înlocuiesc cu valorile obţinute după derivarea polinomului format cu coeficienţii din rândul anterior adică, . Examinând termenii din prima coloană se observă că există o schimbare de semn deci sistemul discret este instabil. Rezultatul obţinut (sistem instabil) era previzibil deoarece:<br>
+<br>nu toţi coeficienţii polinomului caracteristic  sunt pozitivi şi diferiţi de zero;
+<br>rădăcinile ecuaţiei caracteristice , care se pot calcula uşor, sunt . Prin urmare avem o rărdăcină nulă şi una în semiplanul complex drept.
+<br>O aplicaţie interesantă a criteriului Routh este analiza stabilităţii sistemele discrete în funcţie de valorile perioadei de eşantionare.]]></description><link>seminar-4-sae.html</link><guid isPermaLink="false">Seminar 4 SAE.md</guid><pubDate>Fri, 09 Aug 2024 13:39:25 GMT</pubDate><enclosure url="attachments\pasted-image-20240304170941.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;attachments\pasted-image-20240304170941.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Seminar 5 SAE]]></title><description><![CDATA[ 
+ <br><br>Să se verifice că modelul la stare cu matricele:<br><br>are funcţia de transfer:<br><br><br>Funcţia de transfer se deduce conform relaţiei de definiţie .<br>În prima etapă se determină matricea :<br><br>şi apoi se scrie matricea transpusă:<br><br>Se calculează :<br><br>Se determină cofactorii matricei transpuse:<br><br>Având în vedere că :<br><br>se calculează produsul matriceal:<br><br>Se înmulţeşte rezultatul, la stânga, cu matricea  şi astfel se obţine:<br><br>adică tocmai funcţia de transfer dată.<br><br>Fie sistemul cu modelul descris de ecuaţia matriceală de stare:<br><br>Să se arate că acest sistem este controlabil.<br><br>Matricele sistemului sunt<br><br>deci<br><br><br><br>de unde se obţine matricea de controlabilitate<br><br>Deoarece , rezultă că sistemul este controlabil.<br>Soluţie alternativă<br>Modelul cu graf de semnal pentru sistemul studiat este prezentat în figura 4.61.<br><img src="https://cdn.mathpix.com/cropped/2024_03_04_1fd287cad61561871fbdg-3.jpg?height=334&amp;width=1090&amp;top_left_y=775&amp;top_left_x=563" referrerpolicy="no-referrer"><br>Figura 4.61.<br>De aici se poate observa că avem căi de la semnalul de intrare  sau  la toate variabilele de stare ale sistemului, deci sistemul este controlabil.<br><br>Considerăm din nou sistemul de la exercițiul anterior, cu modelul descris de ecuaţiile matriceală de stare şi de ieşire:<br><br><br>Arătaţi că acest sistem este observabil.<br><br>Matricele sistemului sunt<br><br>deci avem<br><br><br>Prin urmare matricea de observabilitate va <br><br>Deoarece, ]]></description><link>seminar-5-sae.html</link><guid isPermaLink="false">Seminar 5 SAE.md</guid><pubDate>Fri, 09 Aug 2024 13:46:17 GMT</pubDate><enclosure url="https://cdn.mathpix.com/cropped/2024_03_04_1fd287cad61561871fbdg-3.jpg?height=334&amp;width=1090&amp;top_left_y=775&amp;top_left_x=563" length="0" type="false"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;https://cdn.mathpix.com/cropped/2024_03_04_1fd287cad61561871fbdg-3.jpg?height=334&amp;width=1090&amp;top_left_y=775&amp;top_left_x=563&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Seminar 6 SAE]]></title><description><![CDATA[ 
+ <br><br>Se consideră funcția de transfer Z a unui sistem în circuit deschis de forma (avem în vedere că . Să se traseze locul rădăcinilor:<br><br>unde .<br><br><br>Ecuaţia caracteristică a sistemului de reglare este<br><br>unde<br><br>Cu un program simplu în MATLAB se poate vedea că pentru ,  şi . Factorul de amplificare  se presupune pozitiv şi variabil de la 0 la .<br><br>Deoarece gradul polinomului de la numitor este , locul rădăcinilor are 2 ramuri. Funcţia de transfer a sistemului deschis are 2 poli:<br>, сu , şi un zero:<br> , cu  când .<br>În figura 4.58 se prezintă repartiţia poli-zero pentru sistemul cu funcţia de transfer dată în cazul . În această situaţie  şi .<br><img src="https://cdn.mathpix.com/cropped/2024_08_09_197c17df9d350146dfb3g-2.jpg?height=883&amp;width=1234&amp;top_left_y=255&amp;top_left_x=411" referrerpolicy="no-referrer"><br><br>Locul rădăcinilor pe axa reală are două porţiuni şi anume:<br>
+<br>între polii  şi ;
+<br>între zeroul  şi .
+<br><br>Numărul asimptotelor este . Ca şi în exemplul precedent, singura asimptotă este pe axa reală şi corespunde locului rădăcinilor cuprins între  şi .<br><br>Deoarece există porţiuni ale locului pe axa reală între doi poli respectiv zerouri (unul finit, altul la infinit) vom avea puncte de ramificaţie. Aceste puncte se determină rezolvând ecuaţia<br>unde .<br>Se obţine succesiv:<br><br>respectiv<br><br>cu soluţiile<br><br>Pentru , valorile celor două rădăcini sunt  şi . Se poate vedea că aceste puncte de pe axa reală sunt într-adevăr puncte de ramificaţie fiind amplasate între cei doi poli ( 0,7405 şi 1 ), respectiv între zerouri  şi .<br>Ca şi în exemplul precedent, între cele două puncte de ramificaţie locul rădăcinilor are forma unui cerc. Procedând ca mai înainte se obţine ecuaţia:<br>  <br>deci cercul are centrul în punctul  şi raza . Pentru , centrul cercului va fi în punctul  şi are raza .  <br><br>Funcţia de transfer z a sistemului deschis nu are poli sau zerouri cu valori complexe.<br><br>Locul rădăcinilor prezintă 3 puncte în care sistemul închis este la limita de stabilitate. Două din aceste puncte corespund unor rădăcini complex conjugate şi prin urmare în aceste puncte avem aceeaşi valoare a factorului de amplificare . Pentru a datermina valoarea lui  corespunzătoare rădăcinilor complexe, folosim criteriul Routh bazat pe transformarea omografică . În acest scop se foloseşte relaţia:<br><br>de unde rezultă ecuaţia caracteristică în  :<br>
+<br>în care  şi .<br>
+În continuare, cu substituţia<br>
+se determină ecuaţia caracteristică în  :<br>
+  respectiv:<br>
+  Tabelul Routh asociat acestei ecuaţii este:<br><br>La limita de stabilitate ecuaţia caracteristică în  are rădăcinile imaginare , deci în tabloul Routh trebuie să avem un rând de zerouri. Acest lucru este realizat dacă termenul din rândul  coloana 1 este egal cu zero, deci dacă:<br>, respectiv <br>de unde, având în vedere că<br>rezultă<br>Pentru  rezultă că factorul de amplificare pentru care sistemul discret analizat este la limita de stabilitate are valoarea .<br>Al treilea punct în care sistemul este la limita de stabilitate este , iar factorul de amplificare corespunzător  se calculează cu relaţia:<br><br>Pentru  rezultă , valoare care nu prezintă interes deoarece este mult mai mare decât  obţinută la limita de stabilitate pentru rădăcinile complexe.<br>Locul rădăcinilor pentru o perioadă de eşantionare cu valoarea  are următoarele date numerice:<br>
+<br>;
+<br>
+<br>, centrul ;
+<br>.
+]]></description><link>seminar-6-sae.html</link><guid isPermaLink="false">Seminar 6 SAE.md</guid><pubDate>Fri, 09 Aug 2024 13:55:02 GMT</pubDate><enclosure url="https://cdn.mathpix.com/cropped/2024_08_09_197c17df9d350146dfb3g-2.jpg?height=883&amp;width=1234&amp;top_left_y=255&amp;top_left_x=411" length="0" type="false"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;https://cdn.mathpix.com/cropped/2024_08_09_197c17df9d350146dfb3g-2.jpg?height=883&amp;width=1234&amp;top_left_y=255&amp;top_left_x=411&quot;&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>
